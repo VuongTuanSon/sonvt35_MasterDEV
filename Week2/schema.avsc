@@ -1,0 +1,50 @@
+{
+  "type" : "record",
+  "name" : "userInfo",
+  "namespace" : "nhom1",
+  "fields" :
+  [
+      {"name" : "username",
+    "type" : "string",
+    "default" : "NONE"},
+
+    {"name" : "age",
+      "type" : "int",
+      "default" : -1},
+
+    {"name" : "phone",
+      "type" : "string",
+      "default" : "NONE"},
+
+    {"name" : "address",
+      "type" :
+      {
+        "type" : "record",
+        "name" : "mailing_address",
+        "fields" :
+        [
+          {
+            "name" : "street",
+            "type" : "string",
+
+
+            "default" : "NONE"
+          },
+
+          {
+            "name" : "city",
+            "type" : "string",
+            "default" : "NONE"
+          },
+
+          {
+            "name" : "country",
+            "type" : "string",
+            "default" : "NONE"
+          }
+        ]
+      },
+      "default": {}
+    }
+  ]
+}
