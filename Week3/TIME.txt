@@ -1,0 +1,2 @@
+Thời gian gen dữ liệu : 2 phút 
+Thời gian insert dữ liệu : 6611,64s ~ 111p
