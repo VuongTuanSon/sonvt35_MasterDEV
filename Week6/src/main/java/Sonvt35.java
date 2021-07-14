@@ -25,7 +25,7 @@ public final class Sonvt35 {
      * <code>required string version = 1;</code>
      * @return The version.
      */
-    java.lang.String getVersion();
+    String getVersion();
     /**
      * <code>required string version = 1;</code>
      * @return The bytes for version.
@@ -42,7 +42,7 @@ public final class Sonvt35 {
      * <code>required string name = 2;</code>
      * @return The name.
      */
-    java.lang.String getName();
+    String getName();
     /**
      * <code>required string name = 2;</code>
      * @return The bytes for name.
@@ -70,7 +70,7 @@ public final class Sonvt35 {
      * <code>optional string phone_id = 4;</code>
      * @return The phoneId.
      */
-    java.lang.String getPhoneId();
+    String getPhoneId();
     /**
      * <code>optional string phone_id = 4;</code>
      * @return The bytes for phoneId.
@@ -118,14 +118,14 @@ public final class Sonvt35 {
       phoneId_ = "";
     }
 
-    @java.lang.Override
+    @Override
     @SuppressWarnings({"unused"})
-    protected java.lang.Object newInstance(
+    protected Object newInstance(
         UnusedPrivateParameter unused) {
       return new DataTracking();
     }
 
-    @java.lang.Override
+    @Override
     public final com.google.protobuf.UnknownFieldSet
     getUnknownFields() {
       return this.unknownFields;
@@ -136,7 +136,7 @@ public final class Sonvt35 {
         throws com.google.protobuf.InvalidProtocolBufferException {
       this();
       if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
+        throw new NullPointerException();
       }
       int mutable_bitField0_ = 0;
       com.google.protobuf.UnknownFieldSet.Builder unknownFields =
@@ -206,22 +206,22 @@ public final class Sonvt35 {
       return Sonvt35.internal_static_DataTracking_descriptor;
     }
 
-    @java.lang.Override
-    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+    @Override
+    protected FieldAccessorTable
         internalGetFieldAccessorTable() {
       return Sonvt35.internal_static_DataTracking_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              Sonvt35.DataTracking.class, Sonvt35.DataTracking.Builder.class);
+              DataTracking.class, Builder.class);
     }
 
     private int bitField0_;
     public static final int VERSION_FIELD_NUMBER = 1;
-    private volatile java.lang.Object version_;
+    private volatile Object version_;
     /**
      * <code>required string version = 1;</code>
      * @return Whether the version field is set.
      */
-    @java.lang.Override
+    @Override
     public boolean hasVersion() {
       return ((bitField0_ & 0x00000001) != 0);
     }
@@ -229,15 +229,15 @@ public final class Sonvt35 {
      * <code>required string version = 1;</code>
      * @return The version.
      */
-    @java.lang.Override
-    public java.lang.String getVersion() {
-      java.lang.Object ref = version_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
+    @Override
+    public String getVersion() {
+      Object ref = version_;
+      if (ref instanceof String) {
+        return (String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
+        String s = bs.toStringUtf8();
         if (bs.isValidUtf8()) {
           version_ = s;
         }
@@ -248,14 +248,14 @@ public final class Sonvt35 {
      * <code>required string version = 1;</code>
      * @return The bytes for version.
      */
-    @java.lang.Override
+    @Override
     public com.google.protobuf.ByteString
         getVersionBytes() {
-      java.lang.Object ref = version_;
-      if (ref instanceof java.lang.String) {
+      Object ref = version_;
+      if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
+                (String) ref);
         version_ = b;
         return b;
       } else {
@@ -264,12 +264,12 @@ public final class Sonvt35 {
     }
 
     public static final int NAME_FIELD_NUMBER = 2;
-    private volatile java.lang.Object name_;
+    private volatile Object name_;
     /**
      * <code>required string name = 2;</code>
      * @return Whether the name field is set.
      */
-    @java.lang.Override
+    @Override
     public boolean hasName() {
       return ((bitField0_ & 0x00000002) != 0);
     }
@@ -277,15 +277,15 @@ public final class Sonvt35 {
      * <code>required string name = 2;</code>
      * @return The name.
      */
-    @java.lang.Override
-    public java.lang.String getName() {
-      java.lang.Object ref = name_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
+    @Override
+    public String getName() {
+      Object ref = name_;
+      if (ref instanceof String) {
+        return (String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
+        String s = bs.toStringUtf8();
         if (bs.isValidUtf8()) {
           name_ = s;
         }
@@ -296,14 +296,14 @@ public final class Sonvt35 {
      * <code>required string name = 2;</code>
      * @return The bytes for name.
      */
-    @java.lang.Override
+    @Override
     public com.google.protobuf.ByteString
         getNameBytes() {
-      java.lang.Object ref = name_;
-      if (ref instanceof java.lang.String) {
+      Object ref = name_;
+      if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
+                (String) ref);
         name_ = b;
         return b;
       } else {
@@ -317,7 +317,7 @@ public final class Sonvt35 {
      * <code>required fixed64 timestamp = 3;</code>
      * @return Whether the timestamp field is set.
      */
-    @java.lang.Override
+    @Override
     public boolean hasTimestamp() {
       return ((bitField0_ & 0x00000004) != 0);
     }
@@ -325,18 +325,18 @@ public final class Sonvt35 {
      * <code>required fixed64 timestamp = 3;</code>
      * @return The timestamp.
      */
-    @java.lang.Override
+    @Override
     public long getTimestamp() {
       return timestamp_;
     }
 
     public static final int PHONE_ID_FIELD_NUMBER = 4;
-    private volatile java.lang.Object phoneId_;
+    private volatile Object phoneId_;
     /**
      * <code>optional string phone_id = 4;</code>
      * @return Whether the phoneId field is set.
      */
-    @java.lang.Override
+    @Override
     public boolean hasPhoneId() {
       return ((bitField0_ & 0x00000008) != 0);
     }
@@ -344,15 +344,15 @@ public final class Sonvt35 {
      * <code>optional string phone_id = 4;</code>
      * @return The phoneId.
      */
-    @java.lang.Override
-    public java.lang.String getPhoneId() {
-      java.lang.Object ref = phoneId_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
+    @Override
+    public String getPhoneId() {
+      Object ref = phoneId_;
+      if (ref instanceof String) {
+        return (String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
+        String s = bs.toStringUtf8();
         if (bs.isValidUtf8()) {
           phoneId_ = s;
         }
@@ -363,14 +363,14 @@ public final class Sonvt35 {
      * <code>optional string phone_id = 4;</code>
      * @return The bytes for phoneId.
      */
-    @java.lang.Override
+    @Override
     public com.google.protobuf.ByteString
         getPhoneIdBytes() {
-      java.lang.Object ref = phoneId_;
-      if (ref instanceof java.lang.String) {
+      Object ref = phoneId_;
+      if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
+                (String) ref);
         phoneId_ = b;
         return b;
       } else {
@@ -384,7 +384,7 @@ public final class Sonvt35 {
      * <code>optional fixed64 lon = 5;</code>
      * @return Whether the lon field is set.
      */
-    @java.lang.Override
+    @Override
     public boolean hasLon() {
       return ((bitField0_ & 0x00000010) != 0);
     }
@@ -392,7 +392,7 @@ public final class Sonvt35 {
      * <code>optional fixed64 lon = 5;</code>
      * @return The lon.
      */
-    @java.lang.Override
+    @Override
     public long getLon() {
       return lon_;
     }
@@ -403,7 +403,7 @@ public final class Sonvt35 {
      * <code>optional fixed64 lat = 6;</code>
      * @return Whether the lat field is set.
      */
-    @java.lang.Override
+    @Override
     public boolean hasLat() {
       return ((bitField0_ & 0x00000020) != 0);
     }
@@ -411,13 +411,13 @@ public final class Sonvt35 {
      * <code>optional fixed64 lat = 6;</code>
      * @return The lat.
      */
-    @java.lang.Override
+    @Override
     public long getLat() {
       return lat_;
     }
 
     private byte memoizedIsInitialized = -1;
-    @java.lang.Override
+    @Override
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
       if (isInitialized == 1) return true;
@@ -439,7 +439,7 @@ public final class Sonvt35 {
       return true;
     }
 
-    @java.lang.Override
+    @Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (((bitField0_ & 0x00000001) != 0)) {
@@ -463,7 +463,7 @@ public final class Sonvt35 {
       unknownFields.writeTo(output);
     }
 
-    @java.lang.Override
+    @Override
     public int getSerializedSize() {
       int size = memoizedSize;
       if (size != -1) return size;
@@ -495,15 +495,15 @@ public final class Sonvt35 {
       return size;
     }
 
-    @java.lang.Override
-    public boolean equals(final java.lang.Object obj) {
+    @Override
+    public boolean equals(final Object obj) {
       if (obj == this) {
        return true;
       }
-      if (!(obj instanceof Sonvt35.DataTracking)) {
+      if (!(obj instanceof DataTracking)) {
         return super.equals(obj);
       }
-      Sonvt35.DataTracking other = (Sonvt35.DataTracking) obj;
+      DataTracking other = (DataTracking) obj;
 
       if (hasVersion() != other.hasVersion()) return false;
       if (hasVersion()) {
@@ -539,7 +539,7 @@ public final class Sonvt35 {
       return true;
     }
 
-    @java.lang.Override
+    @Override
     public int hashCode() {
       if (memoizedHashCode != 0) {
         return memoizedHashCode;
@@ -578,69 +578,69 @@ public final class Sonvt35 {
       return hash;
     }
 
-    public static Sonvt35.DataTracking parseFrom(
+    public static DataTracking parseFrom(
         java.nio.ByteBuffer data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static Sonvt35.DataTracking parseFrom(
+    public static DataTracking parseFrom(
         java.nio.ByteBuffer data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static Sonvt35.DataTracking parseFrom(
+    public static DataTracking parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static Sonvt35.DataTracking parseFrom(
+    public static DataTracking parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static Sonvt35.DataTracking parseFrom(byte[] data)
+    public static DataTracking parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static Sonvt35.DataTracking parseFrom(
+    public static DataTracking parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static Sonvt35.DataTracking parseFrom(java.io.InputStream input)
+    public static DataTracking parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static Sonvt35.DataTracking parseFrom(
+    public static DataTracking parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
-    public static Sonvt35.DataTracking parseDelimitedFrom(java.io.InputStream input)
+    public static DataTracking parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
-    public static Sonvt35.DataTracking parseDelimitedFrom(
+    public static DataTracking parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static Sonvt35.DataTracking parseFrom(
+    public static DataTracking parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static Sonvt35.DataTracking parseFrom(
+    public static DataTracking parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -648,23 +648,23 @@ public final class Sonvt35 {
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
 
-    @java.lang.Override
+    @Override
     public Builder newBuilderForType() { return newBuilder(); }
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(Sonvt35.DataTracking prototype) {
+    public static Builder newBuilder(DataTracking prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
-    @java.lang.Override
+    @Override
     public Builder toBuilder() {
       return this == DEFAULT_INSTANCE
           ? new Builder() : new Builder().mergeFrom(this);
     }
 
-    @java.lang.Override
+    @Override
     protected Builder newBuilderForType(
-        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        BuilderParent parent) {
       Builder builder = new Builder(parent);
       return builder;
     }
@@ -674,18 +674,18 @@ public final class Sonvt35 {
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:DataTracking)
-        Sonvt35.DataTrackingOrBuilder {
+        DataTrackingOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
         return Sonvt35.internal_static_DataTracking_descriptor;
       }
 
-      @java.lang.Override
-      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      @Override
+      protected FieldAccessorTable
           internalGetFieldAccessorTable() {
         return Sonvt35.internal_static_DataTracking_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                Sonvt35.DataTracking.class, Sonvt35.DataTracking.Builder.class);
+                DataTracking.class, Builder.class);
       }
 
       // Construct using Sonvt35.DataTracking.newBuilder()
@@ -694,7 +694,7 @@ public final class Sonvt35 {
       }
 
       private Builder(
-          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+          BuilderParent parent) {
         super(parent);
         maybeForceBuilderInitialization();
       }
@@ -703,7 +703,7 @@ public final class Sonvt35 {
                 .alwaysUseFieldBuilders) {
         }
       }
-      @java.lang.Override
+      @Override
       public Builder clear() {
         super.clear();
         version_ = "";
@@ -721,29 +721,29 @@ public final class Sonvt35 {
         return this;
       }
 
-      @java.lang.Override
+      @Override
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
         return Sonvt35.internal_static_DataTracking_descriptor;
       }
 
-      @java.lang.Override
-      public Sonvt35.DataTracking getDefaultInstanceForType() {
-        return Sonvt35.DataTracking.getDefaultInstance();
+      @Override
+      public DataTracking getDefaultInstanceForType() {
+        return DataTracking.getDefaultInstance();
       }
 
-      @java.lang.Override
-      public Sonvt35.DataTracking build() {
-        Sonvt35.DataTracking result = buildPartial();
+      @Override
+      public DataTracking build() {
+        DataTracking result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
         return result;
       }
 
-      @java.lang.Override
-      public Sonvt35.DataTracking buildPartial() {
-        Sonvt35.DataTracking result = new Sonvt35.DataTracking(this);
+      @Override
+      public DataTracking buildPartial() {
+        DataTracking result = new DataTracking(this);
         int from_bitField0_ = bitField0_;
         int to_bitField0_ = 0;
         if (((from_bitField0_ & 0x00000001) != 0)) {
@@ -775,50 +775,50 @@ public final class Sonvt35 {
         return result;
       }
 
-      @java.lang.Override
+      @Override
       public Builder clone() {
         return super.clone();
       }
-      @java.lang.Override
+      @Override
       public Builder setField(
           com.google.protobuf.Descriptors.FieldDescriptor field,
-          java.lang.Object value) {
+          Object value) {
         return super.setField(field, value);
       }
-      @java.lang.Override
+      @Override
       public Builder clearField(
           com.google.protobuf.Descriptors.FieldDescriptor field) {
         return super.clearField(field);
       }
-      @java.lang.Override
+      @Override
       public Builder clearOneof(
           com.google.protobuf.Descriptors.OneofDescriptor oneof) {
         return super.clearOneof(oneof);
       }
-      @java.lang.Override
+      @Override
       public Builder setRepeatedField(
           com.google.protobuf.Descriptors.FieldDescriptor field,
-          int index, java.lang.Object value) {
+          int index, Object value) {
         return super.setRepeatedField(field, index, value);
       }
-      @java.lang.Override
+      @Override
       public Builder addRepeatedField(
           com.google.protobuf.Descriptors.FieldDescriptor field,
-          java.lang.Object value) {
+          Object value) {
         return super.addRepeatedField(field, value);
       }
-      @java.lang.Override
+      @Override
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof Sonvt35.DataTracking) {
-          return mergeFrom((Sonvt35.DataTracking)other);
+        if (other instanceof DataTracking) {
+          return mergeFrom((DataTracking)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(Sonvt35.DataTracking other) {
-        if (other == Sonvt35.DataTracking.getDefaultInstance()) return this;
+      public Builder mergeFrom(DataTracking other) {
+        if (other == DataTracking.getDefaultInstance()) return this;
         if (other.hasVersion()) {
           bitField0_ |= 0x00000001;
           version_ = other.version_;
@@ -848,7 +848,7 @@ public final class Sonvt35 {
         return this;
       }
 
-      @java.lang.Override
+      @Override
       public final boolean isInitialized() {
         if (!hasVersion()) {
           return false;
@@ -862,16 +862,16 @@ public final class Sonvt35 {
         return true;
       }
 
-      @java.lang.Override
+      @Override
       public Builder mergeFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        Sonvt35.DataTracking parsedMessage = null;
+        DataTracking parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (Sonvt35.DataTracking) e.getUnfinishedMessage();
+          parsedMessage = (DataTracking) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
           if (parsedMessage != null) {
@@ -882,7 +882,7 @@ public final class Sonvt35 {
       }
       private int bitField0_;
 
-      private java.lang.Object version_ = "";
+      private Object version_ = "";
       /**
        * <code>required string version = 1;</code>
        * @return Whether the version field is set.
@@ -894,18 +894,18 @@ public final class Sonvt35 {
        * <code>required string version = 1;</code>
        * @return The version.
        */
-      public java.lang.String getVersion() {
-        java.lang.Object ref = version_;
-        if (!(ref instanceof java.lang.String)) {
+      public String getVersion() {
+        Object ref = version_;
+        if (!(ref instanceof String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
+          String s = bs.toStringUtf8();
           if (bs.isValidUtf8()) {
             version_ = s;
           }
           return s;
         } else {
-          return (java.lang.String) ref;
+          return (String) ref;
         }
       }
       /**
@@ -914,11 +914,11 @@ public final class Sonvt35 {
        */
       public com.google.protobuf.ByteString
           getVersionBytes() {
-        java.lang.Object ref = version_;
+        Object ref = version_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
+                  (String) ref);
           version_ = b;
           return b;
         } else {
@@ -931,7 +931,7 @@ public final class Sonvt35 {
        * @return This builder for chaining.
        */
       public Builder setVersion(
-          java.lang.String value) {
+          String value) {
         if (value == null) {
     throw new NullPointerException();
   }
@@ -966,7 +966,7 @@ public final class Sonvt35 {
         return this;
       }
 
-      private java.lang.Object name_ = "";
+      private Object name_ = "";
       /**
        * <code>required string name = 2;</code>
        * @return Whether the name field is set.
@@ -978,18 +978,18 @@ public final class Sonvt35 {
        * <code>required string name = 2;</code>
        * @return The name.
        */
-      public java.lang.String getName() {
-        java.lang.Object ref = name_;
-        if (!(ref instanceof java.lang.String)) {
+      public String getName() {
+        Object ref = name_;
+        if (!(ref instanceof String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
+          String s = bs.toStringUtf8();
           if (bs.isValidUtf8()) {
             name_ = s;
           }
           return s;
         } else {
-          return (java.lang.String) ref;
+          return (String) ref;
         }
       }
       /**
@@ -998,11 +998,11 @@ public final class Sonvt35 {
        */
       public com.google.protobuf.ByteString
           getNameBytes() {
-        java.lang.Object ref = name_;
+        Object ref = name_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
+                  (String) ref);
           name_ = b;
           return b;
         } else {
@@ -1015,7 +1015,7 @@ public final class Sonvt35 {
        * @return This builder for chaining.
        */
       public Builder setName(
-          java.lang.String value) {
+          String value) {
         if (value == null) {
     throw new NullPointerException();
   }
@@ -1055,7 +1055,7 @@ public final class Sonvt35 {
        * <code>required fixed64 timestamp = 3;</code>
        * @return Whether the timestamp field is set.
        */
-      @java.lang.Override
+      @Override
       public boolean hasTimestamp() {
         return ((bitField0_ & 0x00000004) != 0);
       }
@@ -1063,7 +1063,7 @@ public final class Sonvt35 {
        * <code>required fixed64 timestamp = 3;</code>
        * @return The timestamp.
        */
-      @java.lang.Override
+      @Override
       public long getTimestamp() {
         return timestamp_;
       }
@@ -1089,7 +1089,7 @@ public final class Sonvt35 {
         return this;
       }
 
-      private java.lang.Object phoneId_ = "";
+      private Object phoneId_ = "";
       /**
        * <code>optional string phone_id = 4;</code>
        * @return Whether the phoneId field is set.
@@ -1101,18 +1101,18 @@ public final class Sonvt35 {
        * <code>optional string phone_id = 4;</code>
        * @return The phoneId.
        */
-      public java.lang.String getPhoneId() {
-        java.lang.Object ref = phoneId_;
-        if (!(ref instanceof java.lang.String)) {
+      public String getPhoneId() {
+        Object ref = phoneId_;
+        if (!(ref instanceof String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
+          String s = bs.toStringUtf8();
           if (bs.isValidUtf8()) {
             phoneId_ = s;
           }
           return s;
         } else {
-          return (java.lang.String) ref;
+          return (String) ref;
         }
       }
       /**
@@ -1121,11 +1121,11 @@ public final class Sonvt35 {
        */
       public com.google.protobuf.ByteString
           getPhoneIdBytes() {
-        java.lang.Object ref = phoneId_;
+        Object ref = phoneId_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
+                  (String) ref);
           phoneId_ = b;
           return b;
         } else {
@@ -1138,7 +1138,7 @@ public final class Sonvt35 {
        * @return This builder for chaining.
        */
       public Builder setPhoneId(
-          java.lang.String value) {
+          String value) {
         if (value == null) {
     throw new NullPointerException();
   }
@@ -1178,7 +1178,7 @@ public final class Sonvt35 {
        * <code>optional fixed64 lon = 5;</code>
        * @return Whether the lon field is set.
        */
-      @java.lang.Override
+      @Override
       public boolean hasLon() {
         return ((bitField0_ & 0x00000010) != 0);
       }
@@ -1186,7 +1186,7 @@ public final class Sonvt35 {
        * <code>optional fixed64 lon = 5;</code>
        * @return The lon.
        */
-      @java.lang.Override
+      @Override
       public long getLon() {
         return lon_;
       }
@@ -1217,7 +1217,7 @@ public final class Sonvt35 {
        * <code>optional fixed64 lat = 6;</code>
        * @return Whether the lat field is set.
        */
-      @java.lang.Override
+      @Override
       public boolean hasLat() {
         return ((bitField0_ & 0x00000020) != 0);
       }
@@ -1225,7 +1225,7 @@ public final class Sonvt35 {
        * <code>optional fixed64 lat = 6;</code>
        * @return The lat.
        */
-      @java.lang.Override
+      @Override
       public long getLat() {
         return lat_;
       }
@@ -1250,13 +1250,13 @@ public final class Sonvt35 {
         onChanged();
         return this;
       }
-      @java.lang.Override
+      @Override
       public final Builder setUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.setUnknownFields(unknownFields);
       }
 
-      @java.lang.Override
+      @Override
       public final Builder mergeUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.mergeUnknownFields(unknownFields);
@@ -1267,18 +1267,18 @@ public final class Sonvt35 {
     }
 
     // @@protoc_insertion_point(class_scope:DataTracking)
-    private static final Sonvt35.DataTracking DEFAULT_INSTANCE;
+    private static final DataTracking DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new Sonvt35.DataTracking();
+      DEFAULT_INSTANCE = new DataTracking();
     }
 
-    public static Sonvt35.DataTracking getDefaultInstance() {
+    public static DataTracking getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
-    @java.lang.Deprecated public static final com.google.protobuf.Parser<DataTracking>
+    @Deprecated public static final com.google.protobuf.Parser<DataTracking>
         PARSER = new com.google.protobuf.AbstractParser<DataTracking>() {
-      @java.lang.Override
+      @Override
       public DataTracking parsePartialFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -1291,13 +1291,13 @@ public final class Sonvt35 {
       return PARSER;
     }
 
-    @java.lang.Override
+    @Override
     public com.google.protobuf.Parser<DataTracking> getParserForType() {
       return PARSER;
     }
 
-    @java.lang.Override
-    public Sonvt35.DataTracking getDefaultInstanceForType() {
+    @Override
+    public DataTracking getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
@@ -1316,7 +1316,7 @@ public final class Sonvt35 {
   private static  com.google.protobuf.Descriptors.FileDescriptor
       descriptor;
   static {
-    java.lang.String[] descriptorData = {
+    String[] descriptorData = {
       "\n\rsonvt35.proto\"l\n\014DataTracking\022\017\n\007versi" +
       "on\030\001 \002(\t\022\014\n\004name\030\002 \002(\t\022\021\n\ttimestamp\030\003 \002(" +
       "\006\022\020\n\010phone_id\030\004 \001(\t\022\013\n\003lon\030\005 \001(\006\022\013\n\003lat\030" +
@@ -1331,7 +1331,7 @@ public final class Sonvt35 {
     internal_static_DataTracking_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_DataTracking_descriptor,
-        new java.lang.String[] { "Version", "Name", "Timestamp", "PhoneId", "Lon", "Lat", });
+        new String[] { "Version", "Name", "Timestamp", "PhoneId", "Lon", "Lat", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)
