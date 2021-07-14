@@ -22,7 +22,7 @@ public class ProtobufProducer {
         KafkaProducer<String, byte[]> producer = new KafkaProducer<String, byte[]>(properties);
         ProducerRecord<String, byte[]> producerRecord = null;
 
-        for(int i = 20 ; i < 5000 ; i++){
+        for(int i = 0 ; i < 5000 ; i++){
             Sonvt35.DataTracking message = Sonvt35.DataTracking.newBuilder()
                     .setVersion(String.valueOf(i))
                     .setName(faker.name().fullName())
