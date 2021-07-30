@@ -1,0 +1,128 @@
+Khởi tạo index cho bài 1 và 2
+PUT sonvt35
+{
+  "settings":{
+    "analysis":{
+      "analyzer":{
+        "my_analyzer":{
+          "type":"custom",
+          "tokenizer":"keyword",
+          "filter":[
+            "lowercase"
+          ]
+        },
+        "my_stop_analyzer":{
+          "type":"custom",
+          "tokenizer":"keyword",
+          "filter":[
+            "lowercase",
+            "english_stop"
+          ]
+        }
+      },
+      "filter":{
+        "english_stop":{
+        "type":"stop",
+        "stopwords":"_english_"
+        }
+      }
+    }
+  },
+  "mappings":{
+    "properties":{
+      "title": {
+        "type":"text",
+        "analyzer":"my_analyzer",
+        "search_analyzer":"my_stop_analyzer",
+        "search_quote_analyzer":"my_analyzer"
+      }
+    }
+  }
+}
+bài 1 :
+GET sonvt35\_search
+{
+  "query": {
+    "bool": {
+      "must": [
+        {
+          "range": {
+            "time": {
+              "gte": 1356998400,
+              "lt": 1388534400
+              }
+            }
+          },
+          {
+          "multi_match": {
+            "query": "an toàn, đường bộ, đường sắt",
+            "fields": ["title","description","content"]
+          }
+        }
+      ]
+    }
+  }
+}
+
+bài 2 :
+GET sonvt35\_search
+{
+  "query": {
+    "bool": {
+      "must" : {
+        "match_phrase_prefix" : {
+          "title" : "Hà Nội"
+        }
+      },
+      "must_not": [
+        {
+            "match": {
+            "description": "Hà Nội"
+            }
+        }
+      ]
+    }
+  },
+    "sort" : {
+    "time" : { "order" : "desc" }
+  }
+}
+
+Khởi tạo index cho bài 3 :
+PUT sonvt351
+{ 
+  "settings": {
+    "number_of_shards": 1,
+    "index" : {
+        "similarity" : {
+          "default" : {
+            "type" : "BM25",
+            "b": 1,
+            "k1": 5
+          }
+        }
+    }
+  },
+  "mappings": { 
+    "properties" : { 
+      "suggest_title" : { 
+        "type" : "completion",
+        "preserve_position_increments": false,
+        "preserve_separators": false
+        }
+      }
+    }
+}
+
+GET sonvt351\_search
+{
+  "suggest": {
+        "title-suggest" : {
+            "prefix" : "ông",
+            "completion" : {
+                "field" : "suggest_title",
+                "skip_duplicates" : true
+            }
+        }
+    }
+}
